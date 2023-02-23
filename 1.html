@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script>
+        let name = prompt("Hi, what is your name?")
+
+        function showName() {
+            alert(`${name} you're a monkey now, sorry...`);
+            }
+
+        showName();
+    </script>
+    <script>
+    document.onmousemove = animatedCircles;
+
+    const colors = ['#ccc', '#6cf', '#eba13a'];
+
+    function animatedCircles(event) {
+        let circle = document.createElement('div');
+        circle.setAttribute('class', 'circle');
+        document.body.appendChild(circle);
+
+        circle.style.left = event.clientX + 'px';
+        circle.style.top = event.clientY + 'px';
+
+        let color = colors[Math.floor(Math.random() * colors.length)];
+        circle.style.borderColor = color;
+
+        circle.style.transition = 'all 0.5s linear 0s';
+
+        circle.style.left = circle.offsetLeft - 20 + 'px';
+        circle.style.top = circle.offsetTop - 20 + 'px';
+
+        circle.style.width = '50px';
+        circle.style.height = '50px';
+        circle.style.borderWidth = '5px';
+        circle.style.opacity = 0;
+    }
+    </script>
+    <h1>Monkey</h1>
+    <h2><i>Monkey</i> is a common name that may refer to most <b><i>mammals</i></b>
+    of the infraorder Simiiformers, also known as the simians</h2>
+    <a href="https://yandex.ru/images/search?text=monkey" target="_blank">Is there a <b>Monkey</b> here? Yeah</a>
+    
+    <p><img src="https://www.meme-arsenal.com/memes/3118f6de9af6c1942c3c8a663a662e8a.jpg" alt="monkey one" width="500" height="300"></p>
+    
+    <p><img src="ok.jpg" alt="monkey two" width="500" height="300">
+    
+    <h3>Monkey lives:</h3>
+    <ul>
+        <li>America</li>
+        <li>Africa</li>
+        <li>Asia</li>
+    </ul>
+    <h3 style="color:brown"> Monkey chess game:</h3>
+    <ol>
+        <li>e4 e5</li>
+        <li>Kf3 Kc6</li>
+        <li>Kc3 Kf6</li>
+        <li>Cb5 Cb4</li>
+        <li>O-O O-O</li>
+        <li>d3 d6</li>
+        <li>C:c6 C:c3</li>
+        <li>C:b7 C:b2</li>
+        <li>C:a8 C:a1</li>
+        <li>Cg5 Cg4</li>
+        <li>Ф:a1 Ф:a8</li>
+    </ol>
+</body>
+</html>
